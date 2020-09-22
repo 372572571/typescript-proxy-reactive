@@ -20,7 +20,7 @@ export function observe(fn: Function): ReactionFunction {
     return runReactionWrap(reaction, fn, this, args)
   }
 
-  // 先执行一遍reaction
+  // 先执行一遍reaction包装
   reaction()
 
   // 返回出去 让外部也可以手动调用

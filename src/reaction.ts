@@ -55,7 +55,7 @@ export function runReactionWrap(
 
 /** 传入的观察函数是否正在运行 */
 export function isRunning(reaction: ReactionFunction) {
-  return reactionStack.includes(reaction)
+  return reactionStack.includes(reaction) // 判断数组是否拥有某个元素
 }
 
 /** 当前是否有正在运行的观察函数 */
